@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_weight="0"
+        android:textSize="32sp"
+        android:paddingBottom="16dp"
+        android:text="JOGO DA VELHA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <ImageButton
+                android:onClick="clickListener"
+                android:id="@+id/b0"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <ImageButton
+                android:onClick="clickListener"
+                android:id="@+id/b1"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <ImageButton
+                android:onClick="clickListener"
+                android:id="@+id/b2"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <ImageButton
+                android:onClick="clickListener"
+                android:id="@+id/b3"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <ImageButton
+                android:onClick="clickListener"
+                android:id="@+id/b4"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <ImageButton
+                android:onClick="clickListener"
+                android:id="@+id/b5"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <ImageButton
+                android:onClick="clickListener"
+                android:id="@+id/b6"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <ImageButton
+                android:onClick="clickListener"
+                android:id="@+id/b7"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <ImageButton
+                android:onClick="clickListener"
+                android:id="@+id/b8"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_weight="0"
+        android:textSize="32sp"
+        android:id="@+id/tv_jogada"
+        android:text="Jogador: Humano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_ttt_restart"
+        android:onClick="reiniciar"
+        android:text="REINICIAR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
